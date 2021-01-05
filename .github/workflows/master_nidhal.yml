@@ -32,4 +32,4 @@ jobs:
         app-name: 'nidhal'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_6ddb0f1fac464c6c895e3af7270325f6 }}
-        package: .
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
